@@ -5,7 +5,7 @@ metadata:
     provider: aws
   name: argo-east-subnet1
 spec:
-  availabilityZone: us-east-2a
+  availabilityZone: us-east-1a
   cidrBlock: 192.168.64.0/18
   providerRef:
     name: aws-provider
@@ -20,7 +20,7 @@ metadata:
     provider: aws
   name: argo-east-subnet2
 spec:
-  availabilityZone: us-east-2b
+  availabilityZone: us-east-1b
   cidrBlock: 192.168.128.0/18
   providerRef:
     name: aws-provider
@@ -35,7 +35,7 @@ metadata:
     provider: aws
   name: argo-east-subnet3
 spec:
-  availabilityZone: us-east-2c
+  availabilityZone: us-east-1c
   cidrBlock: 192.168.192.0/18
   providerRef:
     name: aws-provider

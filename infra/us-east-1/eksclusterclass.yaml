@@ -3,28 +3,28 @@ kind: EKSClusterClass
 metadata:
   labels:
     provider: aws
-    region: west
-  name: argo-west-eks
+    region: east
+  name: argo-east-eks
 specTemplate:
   providerRef:
     name: aws-provider
   reclaimPolicy: Delete
-  region: us-west-2
+  region: us-east-1
   roleARNRef:
-    name: argo-west-iamrole
+    name: argo-east-iamrole
   securityGroupIdRefs:
-  - name: argo-west-eks-securitygroup
+  - name: argo-east-eks-securitygroup
   subnetIdRefs:
-  - name: argo-west-subnet1
-  - name: argo-west-subnet2
-  - name: argo-west-subnet3
+  - name: argo-east-subnet1
+  - name: argo-east-subnet2
+  - name: argo-east-subnet3
   vpcIdRef:
-    name: argo-west-vpc
+    name: argo-east-vpc
   workerNodes:
     clusterControlPlaneSecurityGroupRef:
-      name: argo-west-eks-securitygroup
+      name: argo-east-eks-securitygroup
     nodeAutoScalingGroupMaxSize: 1
     nodeAutoScalingGroupMinSize: 1
-    nodeGroupName: argo-west-nodes
+    nodeGroupName: argo-east-nodes
     nodeInstanceType: m3.medium
   writeConnectionSecretsToNamespace: crossplane-system
