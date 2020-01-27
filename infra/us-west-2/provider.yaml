@@ -4,7 +4,7 @@ metadata:
   name: aws-provider-west
 spec:
   credentialsSecretRef:
-    name: example-provider-aws
+    name: aws-account-creds
     namespace: crossplane-system
     key: credentials
   region: us-west-2
