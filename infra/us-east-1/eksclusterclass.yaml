@@ -7,7 +7,7 @@ metadata:
   name: argo-east-eks
 specTemplate:
   providerRef:
-    name: aws-provider
+    name: aws-provider-east
   reclaimPolicy: Delete
   region: us-east-1
   roleARNRef:

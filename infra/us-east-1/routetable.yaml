@@ -13,7 +13,7 @@ spec:
   - subnetIdRef:
       name: argo-east-subnet3
   providerRef:
-    name: aws-provider
+    name: aws-provider-east
   reclaimPolicy: Delete
   routes:
   - destinationCidrBlock: 0.0.0.0/0

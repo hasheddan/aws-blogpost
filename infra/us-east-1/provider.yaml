@@ -1,0 +1,10 @@
+apiVersion: aws.crossplane.io/v1alpha3
+kind: Provider
+metadata:
+  name: aws-provider-east
+spec:
+  credentialsSecretRef:
+    name: example-provider-aws
+    namespace: crossplane-system
+    key: credentials
+  region: us-east-1

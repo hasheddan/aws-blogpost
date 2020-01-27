@@ -9,5 +9,5 @@ spec:
   enableDnsHostNames: true
   enableDnsSupport: true
   providerRef:
-    name: aws-provider
+    name: aws-provider-west
   reclaimPolicy: Delete

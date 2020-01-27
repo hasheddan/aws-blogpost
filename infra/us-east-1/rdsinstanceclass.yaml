@@ -17,7 +17,7 @@ specTemplate:
     vpcSecurityGroupIDRefs:
     - name: argo-east-rds-securitygroup
   providerRef:
-    name: aws-provider
+    name: aws-provider-east
   reclaimPolicy: Delete
   writeConnectionSecretsToNamespace: crossplane-system
 ---
@@ -37,4 +37,4 @@ spec:
       value: argo-east-dbsubnetgroup
   reclaimPolicy: Delete
   providerRef:
-    name: aws-provider
+    name: aws-provider-east

@@ -20,7 +20,7 @@ spec:
     }
   description: iam role for wordpress eks
   providerRef:
-    name: aws-provider
+    name: aws-provider-east
   reclaimPolicy: Delete
   roleName: argo-east-iamrole
 ---
@@ -33,7 +33,7 @@ metadata:
 spec:
   policyArn: arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
   providerRef:
-    name: aws-provider
+    name: aws-provider-east
   reclaimPolicy: Delete
   roleNameRef:
     name: argo-east-iamrole
@@ -47,7 +47,7 @@ metadata:
 spec:
   policyArn: arn:aws:iam::aws:policy/AmazonEKSServicePolicy
   providerRef:
-    name: aws-provider
+    name: aws-provider-east
   reclaimPolicy: Delete
   roleNameRef:
     name: argo-east-iamrole

@@ -1,7 +1,7 @@
 apiVersion: database.crossplane.io/v1alpha1
 kind: MySQLInstance
 metadata:
-  name: sql
+  name: sql-west
 spec:
   classSelector:
     matchLabels:

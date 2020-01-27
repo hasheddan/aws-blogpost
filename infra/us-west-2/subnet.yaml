@@ -8,7 +8,7 @@ spec:
   availabilityZone: us-west-2a
   cidrBlock: 192.168.64.0/18
   providerRef:
-    name: aws-provider
+    name: aws-provider-west
   reclaimPolicy: Delete
   vpcIdRef:
     name: argo-west-vpc
@@ -23,7 +23,7 @@ spec:
   availabilityZone: us-west-2b
   cidrBlock: 192.168.128.0/18
   providerRef:
-    name: aws-provider
+    name: aws-provider-west
   reclaimPolicy: Delete
   vpcIdRef:
     name: argo-west-vpc
@@ -38,7 +38,7 @@ spec:
   availabilityZone: us-west-2c
   cidrBlock: 192.168.192.0/18
   providerRef:
-    name: aws-provider
+    name: aws-provider-west
   reclaimPolicy: Delete
   vpcIdRef:
     name: argo-west-vpc
