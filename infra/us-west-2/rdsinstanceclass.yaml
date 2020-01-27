@@ -20,3 +20,21 @@ specTemplate:
     name: aws-provider
   reclaimPolicy: Delete
   writeConnectionSecretsToNamespace: crossplane-system
+---
+apiVersion: database.aws.crossplane.io/v1alpha3
+kind: DBSubnetGroup
+metadata:
+  name: argo-west-dbsubnetgroup
+spec:
+  groupName: argo-west-dbsubnetgroup
+  description: EKS vpc to rds
+  subnetIdRefs:
+    - name: argo-west-subnet1
+    - name: argo-west-subnet2
+    - name: argo-west-subnet3
+  tags:
+    - key: name
+      value: argo-west-dbsubnetgroup
+  reclaimPolicy: Delete
+  providerRef:
+    name: aws-provider
